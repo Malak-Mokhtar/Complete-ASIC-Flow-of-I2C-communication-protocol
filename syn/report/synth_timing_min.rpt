@@ -1,0 +1,55 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : i2c_master_top
+Version: V-2023.12
+Date   : Sat May 11 19:41:00 2024
+****************************************
+
+Operating Conditions: BEST   Library: saed90nm_min_nt
+Wire Load Model Mode: enclosed
+
+  Startpoint: byte_controller/bit_controller/cSCL_reg[0]
+              (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: byte_controller/bit_controller/cSCL_reg[1]
+            (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  i2c_master_top     8000                  saed90nm_max_lth
+  i2c_master_bit_ctrl
+                     8000                  saed90nm_min_nt
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock wb_clk_i (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.25       0.25
+  byte_controller/bit_controller/cSCL_reg[0]/CLK (DFFARX1)
+                                                          0.00       0.25 r
+  byte_controller/bit_controller/cSCL_reg[0]/QN (DFFARX1)
+                                                          0.14       0.39 r
+  byte_controller/bit_controller/U84/QN (NOR2X0)          0.03       0.42 f
+  byte_controller/bit_controller/cSCL_reg[1]/D (DFFARX1)
+                                                          0.00       0.42 f
+  data arrival time                                                  0.42
+
+  clock wb_clk_i (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.25       0.25
+  clock uncertainty                                       0.30       0.55
+  byte_controller/bit_controller/cSCL_reg[1]/CLK (DFFARX1)
+                                                          0.00       0.55 r
+  library hold time                                       0.01       0.56
+  data required time                                                 0.56
+  --------------------------------------------------------------------------
+  data required time                                                 0.56
+  data arrival time                                                 -0.42
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.14
+
+
+1

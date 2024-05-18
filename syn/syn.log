@@ -1,0 +1,884 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+                 Version V-2023.12 for linux64 - Nov 27, 2023 
+
+                    Copyright (c) 1988 - 2023 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+Current time:       Sat May 11 19:40:53 2024
+Hostname:           elc-v23010696lnx
+CPU Model:          Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz
+CPU Details:        Cores = 4 : Sockets = 1 : Cache Size = 9216 KB : Freq = 2.21 GHz
+OS:                 Linux 3.10.0-1160.108.1.el7.x86_64
+RAM:                  3 GB (Free   0 GB)
+Swap:                13 GB (Free  13 GB)
+Work Filesystem:    /home mounted to /dev/mapper/centos-home
+Tmp Filesystem:     / mounted to /dev/mapper/centos-root
+Work Disk:          184 GB (Free 134 GB)
+Tmp Disk:           299 GB (Free  57 GB)
+
+CPU Load: 10%, Ram Free: 0 GB, Swap Free: 13 GB, Work Disk Free: 134 GB, Tmp Disk Free: 57 GB
+set design i2c_master_top
+i2c_master_top
+set_app_var search_path /home/vlsi/ASIC_Project_G2/standardCell/SAED90nm_EDK_10072017/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models
+/home/vlsi/ASIC_Project_G2/standardCell/SAED90nm_EDK_10072017/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models
+set_app_var target_library "saed90nm_max_lth.db"
+saed90nm_max_lth.db
+set_app_var link_library "* $target_library"
+* saed90nm_max_lth.db
+sh rm -rf work
+sh mkdir -p work
+define_design_lib work -path ./work
+1
+analyze -library work -format Verilog  ../rtl/${design}.v
+Running PRESTO HDLC
+Compiling source file ../rtl/i2c_master_top.v
+Opening include file ../rtl/i2c_master_defines.v
+Opening include file ../rtl/i2c_master_byte_ctrl.v
+Opening include file ../rtl/i2c_master_defines.v
+Opening include file ../rtl/i2c_master_bit_ctrl.v
+Opening include file ../rtl/i2c_master_defines.v
+Warning:  ../rtl/i2c_master_byte_ctrl.v:178: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:180: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:182: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:184: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:189: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:191: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:193: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:195: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:207: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:208: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:209: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:210: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:211: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:212: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:213: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:217: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:218: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:219: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:220: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:221: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:222: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:223: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:228: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:229: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:230: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:231: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:239: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:240: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:244: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:245: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:249: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:250: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:254: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:255: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:258: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:266: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:267: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:271: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:272: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:275: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:282: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:283: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:287: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:288: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:289: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:297: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:298: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:302: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:303: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:306: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:307: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:315: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:316: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:320: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:321: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:324: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:328: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:330: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:333: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:338: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:339: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:342: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:196: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:213: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:214: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:218: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:219: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:223: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:224: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:228: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:229: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:240: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:241: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:245: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:246: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:285: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:286: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:288: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:289: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:293: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:294: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:296: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:297: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:301: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:302: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:304: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:305: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:315: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:316: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:320: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:321: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:325: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:326: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:332: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:333: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:334: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:344: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:346: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:348: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:352: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:354: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:356: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:361: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:389: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:390: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:391: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:392: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:393: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:397: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:398: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:399: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:400: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:401: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:405: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:413: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:414: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:415: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:416: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:417: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:420: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:421: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:422: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:428: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:429: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:430: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:431: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:436: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:437: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:438: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:439: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:444: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:445: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:446: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:447: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:452: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:453: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:454: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:455: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:460: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:461: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:462: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:463: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:464: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:470: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:471: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:472: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:473: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:478: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:479: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:480: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:481: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:486: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:487: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:488: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:489: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:494: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:495: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:496: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:497: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:498: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:504: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:505: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:506: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:507: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:512: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:513: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:514: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:515: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:520: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:521: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:522: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:523: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:528: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:529: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:530: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:531: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:532: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:538: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:539: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:540: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:541: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:546: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:547: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:548: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:549: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:555: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:556: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:557: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:558: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:563: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:564: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:565: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:566: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:567: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:164: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:170: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:171: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:172: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:173: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:174: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:175: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:176: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:177: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:185: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:186: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:187: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:191: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:192: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:193: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:198: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:199: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:200: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:201: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:208: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:210: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:214: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:219: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:221: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:222: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:270: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:271: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:272: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:273: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:277: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:278: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:279: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:280: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:284: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:285: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:286: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:287: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:293: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:295: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Warning:  ../rtl/i2c_master_top.v:297: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Presto compilation completed successfully.
+Loading db file '/home/vlsi/ASIC_Project_G2/standardCell/SAED90nm_EDK_10072017/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_max_lth.db'
+1
+elaborate $design -lib work
+Loading db file '/eda/synopsys/syn/V-2023.12/libraries/syn/gtech.db'
+Loading db file '/eda/synopsys/syn/V-2023.12/libraries/syn/standard.sldb'
+  Loading link library 'saed90nm_max_lth'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Statistics for case statements in always block at line 167 in file
+	'../rtl/i2c_master_top.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           169            |    auto/user     |
+===============================================
+
+Statistics for case statements in always block at line 182 in file
+	'../rtl/i2c_master_top.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           197            |    auto/user     |
+===============================================
+
+Inferred memory devices in process
+	in routine i2c_master_top line 163 in file
+		'../rtl/i2c_master_top.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    wb_ack_o_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_top line 167 in file
+		'../rtl/i2c_master_top.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    wb_dat_o_reg     | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_top line 182 in file
+		'../rtl/i2c_master_top.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       ctr_reg       | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       txr_reg       | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      prer_reg       | Flip-flop |  16   |  Y  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_top line 206 in file
+		'../rtl/i2c_master_top.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       cr_reg        | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_top line 267 in file
+		'../rtl/i2c_master_top.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       al_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|      rxack_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|       tip_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    irq_flag_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_top line 291 in file
+		'../rtl/i2c_master_top.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    wb_inta_o_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (i2c_master_top)
+Elaborated 1 design.
+Current design is now 'i2c_master_top'.
+Information: Building the design 'i2c_master_byte_ctrl'. (HDL-193)
+Warning:  ../rtl/i2c_master_byte_ctrl.v:233: Case statement is not a full case. (ELAB-909)
+
+Statistics for case statements in always block at line 204 in file
+	'../rtl/i2c_master_byte_ctrl.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           233            |    user/user     |
+===============================================
+
+Inferred memory devices in process
+	in routine i2c_master_byte_ctrl line 176 in file
+		'../rtl/i2c_master_byte_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       sr_reg        | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_byte_ctrl line 187 in file
+		'../rtl/i2c_master_byte_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      dcnt_reg       | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_byte_ctrl line 204 in file
+		'../rtl/i2c_master_byte_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    core_txd_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     cmd_ack_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     c_state_reg     | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      shift_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     ack_out_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    core_cmd_reg     | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       ld_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (i2c_master_byte_ctrl)
+Information: Building the design 'i2c_master_bit_ctrl'. (HDL-193)
+Warning:  ../rtl/i2c_master_bit_ctrl.v:408: Case statement is not a full case. (ELAB-909)
+
+Statistics for case statements in always block at line 386 in file
+	'../rtl/i2c_master_bit_ctrl.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           408            |    user/user     |
+|           412            |    user/user     |
+===============================================
+
+Inferred memory devices in process
+	in routine i2c_master_bit_ctrl line 195 in file
+		'../rtl/i2c_master_bit_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    dscl_oen_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_bit_ctrl line 200 in file
+		'../rtl/i2c_master_bit_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   slave_wait_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_bit_ctrl line 210 in file
+		'../rtl/i2c_master_bit_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     clk_en_reg      | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|       cnt_reg       | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_bit_ctrl line 237 in file
+		'../rtl/i2c_master_bit_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      cSDA_reg       | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      cSCL_reg       | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_bit_ctrl line 256 in file
+		'../rtl/i2c_master_bit_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   filter_cnt_reg    | Flip-flop |  14   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_bit_ctrl line 263 in file
+		'../rtl/i2c_master_bit_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      fSCL_reg       | Flip-flop |   3   |  Y  | N  | N  | Y  | N  | N  | N  |
+|      fSDA_reg       | Flip-flop |   3   |  Y  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_bit_ctrl line 282 in file
+		'../rtl/i2c_master_bit_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      sSCL_reg       | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|      dSCL_reg       | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|      sSDA_reg       | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|      dSDA_reg       | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_bit_ctrl line 312 in file
+		'../rtl/i2c_master_bit_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  sta_condition_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|  sto_condition_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_bit_ctrl line 331 in file
+		'../rtl/i2c_master_bit_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      busy_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_bit_ctrl line 342 in file
+		'../rtl/i2c_master_bit_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    cmd_stop_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_bit_ctrl line 350 in file
+		'../rtl/i2c_master_bit_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       al_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_bit_ctrl line 360 in file
+		'../rtl/i2c_master_bit_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      dout_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i2c_master_bit_ctrl line 386 in file
+		'../rtl/i2c_master_bit_ctrl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     sda_chk_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     sda_oen_reg     | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|     scl_oen_reg     | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|     cmd_ack_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     c_state_reg     | Flip-flop |  18   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (i2c_master_bit_ctrl)
+1
+#read_file -format verilog ../rtl/i2c_master_top.v
+#read_file -format verilog ../rtl/i2c_master_byte_ctrl.v
+#read_file -format verilog ../rtl/i2c_master_bit_ctrl.v
+#read_file -format verilog ../rtl/i2c_master_defines.v
+#read_file -format verilog ../rtl/timescale.v
+current_design
+Current design is 'i2c_master_top'.
+{i2c_master_top}
+uplevel #0 check_design -summary
+ 
+****************************************
+check_design summary:
+Version:     V-2023.12
+Date:        Sat May 11 19:40:55 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      5
+    Unconnected ports (LINT-28)                                     2
+    Shorted outputs (LINT-31)                                       1
+    Constant outputs (LINT-52)                                      2
+
+Cells                                                               3
+    Cells do not drive (LINT-1)                                     3
+--------------------------------------------------------------------------------
+
+Information: Use the 'check_design' command for 
+	 more information about warnings. (LINT-98)
+
+1
+source -echo -verbose ./cons/cons.tcl
+reset_design
+1
+create_clock -name wb_clk_i -period 5 [get_ports wb_clk_i]
+1
+set_input_delay -max 2 -clock [get_clocks wb_clk_i] [remove_from_collection [all_inputs] [get_ports wb_clk_i]]
+1
+set_output_delay -max 2 -clock [get_clocks wb_clk_i] [all_outputs]
+1
+set_clock_uncertainty 0.3 [get_clocks]
+1
+set_clock_latency      0.25  [get_clocks wb_clk_i]
+1
+set_clock_transition 0.2 [get_clocks wb_clk_i]
+1
+set_false_path -hold -from [remove_from_collection [all_inputs] [get_ports wb_clk_i]]
+1
+set_false_path -hold -to [all_outputs]
+1
+set_min_library  saed90nm_max_lth.db -min_version saed90nm_min_nt.db 
+Loading db file '/home/vlsi/ASIC_Project_G2/standardCell/SAED90nm_EDK_10072017/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_min_nt.db'
+1
+set_wire_load_model -name "8000" -library saed90nm_max_lth
+1
+set_wire_load_mode enclosed
+1
+set_load -max [expr {2 * [load_of saed90nm_max_lth/NBUFFX8/INP]}] [all_outputs]
+1
+set_driving_cell -no_design_rule -max -lib_cell TNBUFFX1 [remove_from_collection [all_inputs] [get_ports wb_clk_i]]
+1
+create_clock -period 5 -name V_Clk
+Warning: Creating virtual clock named 'V_Clk' with no sources. (UID-348)
+1
+set_input_delay -max 0.5 -clock V_Clk [get_ports wb_stb_i ]
+1
+set_output_delay -max 0.5 -clock V_Clk [get_ports wb_ack_o]
+1
+group_path -name INPUTS -from [remove_from_collection [all_inputs] [get_ports wb_clk_i]]
+1
+group_path -name OUTPUTS -to [all_outputs]
+1
+group_path -name COMB -from [all_inputs] -to [all_outputs]
+1
+1
+link
+
+  Linking design 'i2c_master_top'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (3 designs)               /home/vlsi/ASIC_Project_G2/syn/i2c_master_top.db, etc
+  saed90nm_max_lth (library)  /home/vlsi/ASIC_Project_G2/standardCell/SAED90nm_EDK_10072017/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_max_lth.db
+
+1
+set_fix_multiple_port_nets -all 
+1
+compile -exact_map
+CPU Load: 10%, Ram Free: 0 GB, Swap Free: 13 GB, Work Disk Free: 134 GB, Tmp Disk Free: 57 GB
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | V-2023.12-DWBB_202312.0 |     *     |
+| Licensed DW Building Blocks        |                         |           |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler                                                                   |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 604                                    |
+| Number of User Hierarchies                              | 2                                      |
+| Sequential Cell Count                                   | 154                                    |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 6                                      |
+| Number of VT Class                                      | 1                                      |
+| Number of Clocks                                        | 2                                      |
+| Number of Dont Touch Cells                              | 184                                    |
+| Number of Dont Touch Nets                               | 0                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+----------------------------------------------------------------------------------------------------
+| Variables                                               | Value                                  |
+----------------------------------------------------------------------------------------------------
+| set_fix_multiple_port_nets                              | -all                                   |
+====================================================================================================
+
+Information: There are 8 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'i2c_master_bit_ctrl'
+Information: The register 'c_state_reg[17]' is a constant and will be removed. (OPT-1206)
+  Processing 'i2c_master_byte_ctrl'
+Information: Changed minimum wire load model for 'DW01_dec_width3_DW01_dec_0' from 'ForQA' to 'ForQA'. (OPT-171)
+  Processing 'i2c_master_top'
+WARNING: cell ctr_reg[7] ignores exact_map
+WARNING: cell ctr_reg[6] ignores exact_map
+WARNING: cell ctr_reg[5] ignores exact_map
+WARNING: cell ctr_reg[4] ignores exact_map
+WARNING: cell ctr_reg[3] ignores exact_map
+WARNING: cell ctr_reg[2] ignores exact_map
+WARNING: cell ctr_reg[1] ignores exact_map
+WARNING: cell ctr_reg[0] ignores exact_map
+WARNING: cell txr_reg[7] ignores exact_map
+WARNING: cell txr_reg[6] ignores exact_map
+WARNING: cell txr_reg[5] ignores exact_map
+WARNING: cell txr_reg[4] ignores exact_map
+WARNING: cell txr_reg[3] ignores exact_map
+WARNING: cell txr_reg[2] ignores exact_map
+WARNING: cell txr_reg[1] ignores exact_map
+WARNING: cell txr_reg[0] ignores exact_map
+WARNING: cell prer_reg[15] ignores exact_map
+WARNING: cell prer_reg[14] ignores exact_map
+WARNING: cell prer_reg[13] ignores exact_map
+WARNING: cell prer_reg[12] ignores exact_map
+WARNING: cell prer_reg[11] ignores exact_map
+WARNING: cell prer_reg[10] ignores exact_map
+WARNING: cell prer_reg[9] ignores exact_map
+WARNING: cell prer_reg[8] ignores exact_map
+WARNING: cell prer_reg[7] ignores exact_map
+WARNING: cell prer_reg[6] ignores exact_map
+WARNING: cell prer_reg[5] ignores exact_map
+WARNING: cell prer_reg[4] ignores exact_map
+WARNING: cell prer_reg[3] ignores exact_map
+WARNING: cell prer_reg[2] ignores exact_map
+WARNING: cell prer_reg[1] ignores exact_map
+WARNING: cell prer_reg[0] ignores exact_map
+WARNING: cell cr_reg[3] ignores exact_map
+WARNING: cell cr_reg[4] ignores exact_map
+WARNING: cell cr_reg[5] ignores exact_map
+WARNING: cell cr_reg[6] ignores exact_map
+WARNING: cell cr_reg[7] ignores exact_map
+WARNING: cell cr_reg[2] ignores exact_map
+WARNING: cell cr_reg[1] ignores exact_map
+WARNING: cell cr_reg[0] ignores exact_map
+
+  Updating timing information
+Information: Changed minimum wire load model for 'i2c_master_bit_ctrl' from '8000' to '8000'. (OPT-171)
+Information: Changed minimum wire load model for 'i2c_master_byte_ctrl' from 'ForQA' to '8000'. (OPT-171)
+Information: Changed minimum wire load model for 'i2c_master_top' from '8000' to '16000'. (OPT-171)
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'i2c_master_bit_ctrl_DW01_dec_0_DW01_dec_1'
+Information: Changed minimum wire load model for 'i2c_master_bit_ctrl_DW01_dec_0_DW01_dec_1' from '8000' to '8000'. (OPT-171)
+Information: Changed minimum wire load model for 'i2c_master_top' from '8000' to '16000'. (OPT-171)
+  Processing 'i2c_master_bit_ctrl_DW01_dec_1_DW01_dec_2'
+Information: Changed minimum wire load model for 'i2c_master_bit_ctrl_DW01_dec_1_DW01_dec_2' from '8000' to '8000'. (OPT-171)
+Information: Changed minimum wire load model for 'i2c_master_top' from '8000' to '16000'. (OPT-171)
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+Information: Changed minimum wire load model for 'i2c_master_top' from '8000' to '16000'. (OPT-171)
+Information: Changed minimum wire load model for 'i2c_master_top' from '8000' to '16000'. (OPT-171)
+Information: Changed minimum wire load model for 'i2c_master_top' from '8000' to '16000'. (OPT-171)
+Information: Changed minimum wire load model for 'i2c_master_top' from '8000' to '16000'. (OPT-171)
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:03   10329.3      0.00       0.0       0.0                          
+    0:00:03   10329.3      0.00       0.0       0.0                          
+    0:00:03   10329.3      0.00       0.0       0.0                          
+    0:00:03   10329.3      0.00       0.0       0.0                          
+    0:00:03   10329.3      0.00       0.0       0.0                          
+    0:00:03    9052.9      0.00       0.0       0.0                          
+    0:00:03    9044.6      0.00       0.0       0.0                          
+    0:00:03    9044.6      0.00       0.0       0.0                          
+    0:00:03    9044.6      0.00       0.0       0.0                          
+    0:00:03    9044.6      0.00       0.0       0.0                          
+    0:00:03    9044.6      0.00       0.0       0.0                          
+    0:00:03    9044.6      0.00       0.0       0.0                          
+    0:00:03    9044.6      0.00       0.0       0.0                          
+    0:00:03    9044.6      0.00       0.0       0.0                          
+Information: Changed minimum wire load model for 'i2c_master_top' from '8000' to '16000'. (OPT-171)
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:03    9044.6      0.00       0.0       0.0                          
+    0:00:03    9044.6      0.00       0.0       0.0                          
+    0:00:03    9044.6      0.00       0.0       0.0                          
+    0:00:03    9044.6      0.00       0.0       0.0                          
+    0:00:03    9044.6      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:03    9044.6      0.00       0.0       0.0                          
+    0:00:03    9044.6      0.00       0.0       0.0                          
+    0:00:03    8695.3      0.00       0.0       0.0                          
+    0:00:03    8617.9      0.00       0.0       0.0                          
+    0:00:03    8595.8      0.00       0.0       0.0                          
+    0:00:03    8573.6      0.00       0.0       0.0                          
+    0:00:03    8562.6      0.00       0.0       0.0                          
+    0:00:03    8562.6      0.00       0.0       0.0                          
+    0:00:03    8562.6      0.00       0.0       0.0                          
+    0:00:03    8562.6      0.00       0.0       0.0                          
+    0:00:03    8562.6      0.00       0.0       0.0                          
+    0:00:03    8562.6      0.00       0.0       0.0                          
+    0:00:03    8562.6      0.00       0.0       0.0                          
+    0:00:03    8562.6      0.00       0.0       0.0                          
+    0:00:03    8562.6      0.00       0.0       0.0                          
+Loading db file '/home/vlsi/ASIC_Project_G2/standardCell/SAED90nm_EDK_10072017/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_min_nt.db'
+Loading db file '/home/vlsi/ASIC_Project_G2/standardCell/SAED90nm_EDK_10072017/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_max_lth.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+CPU Load: 11%, Ram Free: 0 GB, Swap Free: 13 GB, Work Disk Free: 134 GB, Tmp Disk Free: 57 GB
+Information: Total number of MV cells in the design.
+----------------------------------------------------------------------------------------------------
+ MV Cells                                           Total Number                                   
+----------------------------------------------------------------------------------------------------
+ Level Shifter:                                     0                                             
+ Enable Level Shifter:                              0                                             
+ Isolation Cell:                                    0                                             
+ Retention Cell:                                    0                                             
+ Retention Clamp Cell:                              0                                             
+ Switch Cell:                                       0                                             
+ Always-On Cell:                                    0                                             
+ Repeater Cell:                                     0                                             
+
+----------------------------------------------------------------------------------------------------
+Unmapped MV Cells 
+----------------------------------------------------------------------------------------------------
+0 Isolation Cells are unmapped 
+0 Retention Clamp Cells are unmapped 
+----------------------------------------------------------------------------------------------------
+1
+set_svf -off
+1
+report_area > ./report/synth_area.rpt
+report_cell > ./report/synth_cells.rpt
+report_qor  > ./report/synth_qor.rpt
+report_resources > ./report/synth_resources.rpt
+report_timing -max_paths 10 > ./report/synth_timing.rpt
+report_timing -delay_type min > ./report/synth_timing_min.rpt
+write_sdc  output/${design}.sdc
+1
+define_name_rules  no_case -case_insensitive
+1
+change_names -rule no_case -hierarchy
+1
+change_names -rule verilog -hierarchy
+1
+set verilogout_no_tri	 true
+true
+set verilogout_equation  false
+false
+write  -hierarchy   -format verilog  -output output/${design}.v 
+Writing verilog file '/home/vlsi/ASIC_Project_G2/syn/output/i2c_master_top.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+1
+write    -f    ddc    -hierarchy      -output  output/${design}.ddc 
+Writing ddc file 'output/i2c_master_top.ddc'.
+1
+1
+dc_shell>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
