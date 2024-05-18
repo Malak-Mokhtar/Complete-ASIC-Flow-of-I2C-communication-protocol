@@ -1,0 +1,65 @@
+#@ # 
+#@ # Running fm_shell Version V-2023.12 for linux64 -- Nov 16, 2023
+#@ # Date:   Sat May 11 19:42:13 2024
+#@ # Run by: vlsi@elc-v23010696lnx
+#@ 
+
+source /eda/synopsys/fm/V-2023.12/admin/setup/.synopsys_fm.setup
+#@ # -- Starting source /eda/synopsys/fm/V-2023.12/admin/setup/.synopsys_fm.setup
+
+#@ #
+#@ # .synopsys_fm.setup: Initialization File for Formality
+#@ #
+#@ 
+#@ 
+#@ #
+#@ # Enable stack trace output on fatal.  Not available for all architectures.
+#@ #
+#@ if { $sh_arch == "sparc" || $sh_arch == "sparcOS5" || \
+#@      $sh_arch == "hp700" || $sh_arch == "hpux10" } {
+#@   set_unix_variable SYNOPSYS_TRACE ""
+#@ }
+#@ 
+#@ #
+#@ # Variable settings
+#@ #
+#@ set sh_new_variable_message true
+#@ 
+#@ #
+#@ # Synopsys strongly recommends that you uncomment the following command
+#@ # in order to set sh_command_abbrev_mode to the value "Command-Line-Only".
+#@ # Command abbreviation is intended as an interactive convenience.  Using
+#@ # abbreviations in scripts can cause commands to fail in subsequent releases.
+#@ # 
+#@ #set sh_command_abbrev_mode "Command-Line-Only"
+#@ 
+#@ #
+#@ # Some useful aliases
+#@ #
+#@ alias list_commands		help
+#@ 
+#@ #
+#@ # The alias of q to quit is commented out.  Remove the comment 
+#@ # character if you want this alias.  Some users find that having 
+#@ # this particular alias causes problems when mixed with page-mode
+#@ # for reports - an accidental repeated 'q' not only cancels the
+#@ # output but exits the tool.
+#@ #
+#@ #alias q quit
+#@ # -- End source /eda/synopsys/fm/V-2023.12/admin/setup/.synopsys_fm.setup
+
+source form.tcl
+#@ # -- Starting source form.tcl
+
+#@ set synopsys_auto_setup true
+#@ set_svf -append { /home/vlsi/ASIC_Project_G2/syn/default.svf } 
+#@ read_verilog -container r -libname WORK -05 { /home/vlsi/ASIC_Project_G2/rtl/i2c_master_bit_ctrl.v /home/vlsi/ASIC_Project_G2/rtl/i2c_master_byte_ctrl.v /home/vlsi/ASIC_Project_G2/rtl/i2c_master_defines.v /home/vlsi/ASIC_Project_G2/rtl/i2c_master_top.v /home/vlsi/ASIC_Project_G2/rtl/timescale.v } 
+#@ set_top r:/WORK/i2c_master_top 
+#@ read_verilog -container i -libname WORK -05 { /home/vlsi/ASIC_Project_G2/syn/output/i2c_master_top.v } 
+#@ read_db { /home/vlsi/ASIC_Project_G2/standardCell/SAED90nm_EDK_10072017/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_max_lth.db } 
+#@ set_top i:/WORK/i2c_master_top 
+#@ match
+#@ verify 
+#@ 
+#@ # -- End source form.tcl
+

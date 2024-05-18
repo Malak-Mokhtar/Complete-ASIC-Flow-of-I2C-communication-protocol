@@ -1,0 +1,2 @@
+mkdir log
+fm_shell | tee  ./log/log.txt
